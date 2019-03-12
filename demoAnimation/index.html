@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>demo responsive</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- <select class="extend-time"></select> -->
+	</div>
+	<div class="container">
+		<table class="table table-responsive">
+			<thead>
+				<tr>
+					<th>Task</th>
+					<th>Category</th>
+					<th>Point</th>
+					<th>User</th>
+					<th>Time</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td data-title="Task"><div>The Very Beginning</div></td>
+					<td data-title="Category"><div>Game</div></td>
+					<td data-title="Point"><div>10</div></td>
+					<td data-title="User"><div>admin</div></td>
+					<td data-title="Time"><div>11/12/2018</div></td>
+				</tr>
+				<tr>
+					<td data-title="Task"><div>The Very Beginning</div></td>
+					<td data-title="Category"><div>Game</div></td>
+					<td data-title="Point"><div>10</div></td>
+					<td data-title="User"><div>admin</div></td>
+					<td data-title="Time"><div>11/12/2018</div></td>
+				</tr>
+				<tr>
+					<td data-title="Task"><div>The Very Beginning</div></td>
+					<td data-title="Category"><div>Game</div></td>
+					<td data-title="Point"><div>10</div></td>
+					<td data-title="User"><div>admin</div></td>
+					<td data-title="Time"><div>11/12/2018</div></td>
+				</tr>
+				<tr>
+					<td data-title="Task"><div>The Very Beginning</div></td>
+					<td data-title="Category"><div>Game</div></td>
+					<td data-title="Point"><div>10</div></td>
+					<td data-title="User"><div>admin</div></td>
+					<td data-title="Time"><div>11/12/2018</div></td>
+				</tr>
+				<tr>
+					<td data-title="Task"><div>The Very Beginning</div></td>
+					<td data-title="Category"><div>Game</div></td>
+					<td data-title="Point"><div>10</div></td>
+					<td data-title="User"><div>admin</div></td>
+					<td data-title="Time"><div>11/12/2018</div></td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<div class="col-md-12">
+			<div class="item hidden">1</div>
+			<div class="item hidden">2</div>
+			<div class="item hidden">3</div>
+			<div class="item hidden">4</div>
+			<div class="item hidden">5</div>
+			<div class="item hidden">6</div>
+			<div class="item hidden">7</div>
+			<div class="item hidden">8</div>
+			<div class="item hidden">9</div>
+			<div class="item hidden">10</div>
+			<div class="item hidden">11</div>
+			<div class="item hidden">12</div>
+			<div class="item hidden">13</div>
+			<div class="item hidden">14</div>
+			<div class="item hidden">15</div>
+			<div class="item hidden">16</div>
+			<div class="item hidden">17</div>
+			<div class="item hidden">18</div>
+			<div class="item hidden">19</div>
+
+		</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+		  var hr = "00";
+		  var mi = "00";
+		  var count = 0;
+		  for (hr = "0"; hr <= 24; hr++) {
+		    if (hr < 10) {
+		      apd = "0";
+		    } else {
+		      apd = ""
+		    }
+		    if (count % 2 == 0) {
+		      mi = "00";
+
+		      $(".extend-time").append('<option val="' + apd + hr + ':' + mi + '">' + apd + hr + ':' + mi + '</option>');
+		    } else {
+		      hr--;
+		      mi = "30";
+		      $(".extend-time").append('<option val="' + apd + hr + ':' + mi + '">' + apd + hr + ':' + mi + '</option>')
+		    }
+		    count++;
+		  }
+		  $('.extend-time option').last().remove();
+
+
+		  var lenght_item = $('.item').length;
+		  console.log(parseInt(lenght_item) / 5);
+		});
+	</script>
+</body>
+</html>

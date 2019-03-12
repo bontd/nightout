@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Custom Video</title>
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+        <script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+        <link rel="stylesheet" href="css/player-default.css">
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <style>
+        body { background-color:#333; }
+        h1 { margin:150px auto 50px auto; text-align:center;color:#fff;}
+        </style>
+    </head>
+    <body>
+        <div id="video">
+            <input type="hidden" value="video/SampleVideo.mp4">
+            <!-- <input type="hidden" value="video/video-1.mp4">
+            <input type="hidden" value="video/SampleVideo.mp4">
+            <input type="hidden" value="video/SampleVideo.mp4"> -->
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                for(var i = 1; i <= $('#video input').length; i++){
+                    var url_video = $('#video input:nth-child('+i+')').val();
+                    var p = $("#video").player({
+                        video: {
+                            url: {
+                                hq: {
+                                    en: url_video
+                                }
+                            }
+                        }
+                    }, {width: 700});
+                }
+            },false);
+        </script>
+    </body>
+</html>

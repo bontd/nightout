@@ -1,0 +1,733 @@
+/*
+Theme Name: AllStore
+Theme URI: http://allstore.real-web.pro
+Author: Real Web
+Author URI: http://themeforest.net/user/real-web
+Description: AllStore - MultiConcept eCommerce Shop WP Theme
+Version: 1.2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: allstore
+Tags: translation-ready, editor-style
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+/*body {
+	background-color: #00582d;
+}*/
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+.flexslider .slides img {
+    width: 100%;
+    display: inline-block!important;
+}
+
+
+.vc_custom_1500050668612 {
+	background-color: #00582d!important;
+	border-color: #00582d!important;
+}
+.header-middle {
+	padding: 0;
+}
+.header-middle .header-middle-cont .toplogo{
+	border-top: solid thin #00582d;
+	border-bottom: solid thin #00582d;
+	border-left: solid thin #00582d;
+	padding: 15px;
+	min-height: 131px;
+	margin: 0;
+}
+.header .links_list p a,
+.header .links_list .links_list-label,
+#main .links_list p a,
+#main .links_list .links_list-label{
+	color: #fff!important;
+}
+.header {
+	margin: 0;
+}
+.topmenu .topcatalog .topcatalog-btn,
+.topmenu .mainmenu-btn,
+.topsearch .dgwt-wcas-search-wrapp button[type=submit], .topsearch .topsearch-form button[type=submit] {
+	background-color: #00582d;
+	color: #fff;
+}
+.topmenu .mainmenu {
+	background-color: #00582d;
+	padding-left: 17px;
+}
+.topmenu .mainmenu li.current_page_parent > a,
+.topmenu .mainmenu li.current-menu-parent > a, 
+.topmenu .mainmenu li.current-menu-ancestor > a, 
+.topmenu .mainmenu li.current-menu-item > a, 
+.topmenu .mainmenu li.current_page_item > a,
+.topmenu #primary-menu > ul > li > a, 
+.topmenu .mainmenu > li > a {
+	color: #fff;
+}
+.topmenu #primary-menu > ul > li > a:hover, 
+.topmenu .mainmenu > li > a:hover,
+.topsearch .topsearch-btn:hover {
+	color: #fff;
+	background-color: #148241;
+}
+
+.topmenu .mainmenu li.current_page_parent > a,
+.topmenu .mainmenu li.current-menu-parent > a, 
+.topmenu .mainmenu li.current-menu-ancestor > a, 
+.topmenu .mainmenu li.current-menu-item > a, 
+.topmenu .mainmenu li.current_page_item > a {
+	background-color: #148241;
+}
+.topsearch .topsearch-btn {
+	background-color: #00582d;
+	color: #fff;
+}
+#content .vc_custom_1540179000583 {
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+}
+
+.banner-i.pos-top .banner-i-cont,
+.pos-bot .banner-i-cont,
+.pos-right .banner-i-cont-inner {
+	background: rgba(255,255,255,0.7);
+	padding: 15px 0 10px 0;
+	/*color: #fff;*/
+}
+.banner-i .banner-i-ttl {
+	/*color: #fff;*/
+}
+.banner-i-ttl {
+	margin: 0 0 10px!important;
+}
+.wpb_wrapper .wpb_content_element {
+	margin-bottom: 0;
+}
+
+.allstore-tabs.vc_tta-style-allstore .vc_tta-tabs-container .vc_tta-tabs-list li.vc_active a {
+	background-color: #00582d;
+}
+body .heading-allstore span:before, body .component-ttl span:before {
+	background-color: #eaeaea;
+}
+body .heading-allstore span:after, body .component-ttl span:after,
+.main-ttl span:after {
+	background: #00582d;
+}
+body .heading-allstore, body .component-ttl,
+h1.main-ttl{
+	color: #00582d;
+}
+.topcatalog-list li a {
+	background-color:#00582d;
+	color: #fff; 
+}
+.topcatalog-list li:hover > a{
+	background-color: #148241;
+}
+.wpb_wrapper .vc_custom_1539921925457 {
+	margin-top: 0!important;
+}
+.compare-btn {
+	display: none!important;
+}
+.woocommerce-info,
+.woocommerce-info::before {
+	border-color: #00582d;
+}
+.prod-items .prod-i-img {
+	height: 180px;
+}
+.prod-items .prod-i {
+	width: 100%;
+}
+.prod-items .product_cat-cao-cap .prod-i-img,
+.prod-items .product_cat-da-nhan-tao-goc-thach-anh .prod-i-img,
+.prod-items .product_cat-tranh-da-3d .prod-i-img{
+	height: auto;
+}
+.prod-items .product_cat-cao-cap .prod-i-img img,
+.prod-items .product_cat-da-nhan-tao-goc-thach-anh .prod-i-img img,
+.prod-items .product_cat-tranh-da-3d .prod-i-img img {
+	width: 100%;
+	max-height: 215px;
+}
+.g-product-hot .prod-items .product_cat-cao-cap .prod-i-img img,
+.g-product-hot .prod-items .product_cat-da-nhan-tao-goc-thach-anh .prod-i-img img,
+.g-product-hot .prod-items .product_cat-tranh-da-3d .prod-i-img img {
+	width: 100%;
+	max-height: 155px;
+}
+
+.prod-items .prod-i-img {
+	padding: 10px;
+}
+.g-category-maxheight .prod-items .product_cat-cao-cap,
+.g-category-maxheight .prod-items .product_cat-da-nhan-tao-goc-thach-anh,
+.g-category-maxheight .prod-items .product_cat-tranh-da-3d{
+	min-height: 320px;
+}
+.f-subscribe-form input[type=submit], 
+.f-subscribe-form button,
+.discounts-wrap .discounts-info a {
+	background-color: #00582d;
+}
+.banner-i.with-bg .banner-i-cont-inner {
+    /*background: rgba(24,154,77,0.7);*/
+ }
+ .woocommerce #woocommerce_top_rated_products-3 ul.product_list_widget li {
+ 	padding: 10px 0;
+ 	border-bottom: solid thin #ccc;
+ }
+.woocommerce #woocommerce_top_rated_products-3 ul.product_list_widget li img{
+	width: 80px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+/*.woocommerce #woocommerce_top_rated_products-3 ul.product_list_widget li a span {
+	min-width: 65%;
+	display: inline-block;
+}*/
+.wpb_wrapper .wpb_gmaps_widget {
+	margin-top: 0!important;
+}
+ul.b-crumbs {
+	padding: 10px 0;
+}
+.toplogo img {
+	width: 200px;
+}
+
+#content-right-home .vc_gitem-zone.vc_gitem-zone-c {
+	display: none;
+}
+.stylization b.title-footer-3 {
+	font-size: 18px;
+	margin: 0 0 10px;
+    width: 100%;
+    display: inline-block;
+}
+body .heading-allstore {
+	font-size: 18px;
+	margin: 20px 0;
+}
+.header-middle-cont {
+	display: flex;
+	align-items: center;
+}
+.header-middle-cont:before,
+.header-middle-cont:after {
+	display: none!important;
+}
+.infomation-company {
+	width: 100%;
+	min-height: 131px;
+	text-align: center;
+	color: #00582d;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 15px;
+	border-top: solid thin #00582d;
+	border-bottom: solid thin #00582d;
+	border-right: solid thin #00582d;
+}
+.infomation-company h2 {
+	font-size: 26px;
+}
+
+.title-footer-3,
+.address-footer-3 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.address-footer-3 b,
+.infomation-company b {
+	font-weight: bold;
+}
+body,
+.prod-items .prod-i h3 a,
+.stylization h1, 
+.stylization h2, 
+.stylization h5, 
+.stylization h6,
+.stylization,
+.prod-items .prod-i-price,
+.section-sb-current ul li a,
+.b-crumbs li a ,
+.b-crumbs li,
+.section-sb-current h3 a,
+.stylization .iconbox-i h3,
+.iconbox-i,
+.posts2-i .posts-i-ttl a,
+.posts2-i p,
+.posts2-i .posts-i-more,
+#allstorecategories_widget-3 h3,
+.widget_nav_menu ul li a,
+.stylization b,
+.links_list li p,
+.prod-cont .prod-i-props b,
+.prod-cont .prod-i-props,
+.stylization a,
+.prod-tab.prod-props table.shop_attributes tr th:first-child, 
+.prod-tab.prod-props table tr td:first-child,
+.prod2-related h2,
+.prod-rel h3 a,
+.prod-rel .prod-rel-price,
+.prod-tab table,
+.woocommerce #reviews h3, .prod-comment-form h3,
+.woocommerce .prod-cont .added_to_cart,
+.stylization table,
+.cart-items-wrap .cart-items tbody .cart-ttl a,
+.woocommerce-checkout h3,
+.b-crumbs li:after,
+.woocommerce-input-wrapper strong,
+.stylization .shop_table  strong,
+.woocommerce-order-overview strong,
+.contactform label,
+.wpb_text_column .wpb_wrapper p strong,
+.prod-cont .prod-showprops,
+.woocommerce .prod-plus,
+.woocommerce .prod-minus,
+.reviews-i .reviews-i-date,
+.reviews-list .reviews-i,
+.woocommerce #reviews h3.reviews-i-ttl, .reviews-i .reviews-i-ttl,
+.woocommerce #reviews h3.reviews-i-ttl a:hover, .reviews-i .reviews-i-ttl a:hover
+.reviews-i-showanswer a,
+.stylization .order-total strong {
+	color: #00582d;
+}
+.section-sb-current > ul > li > a > .section-sb-label:hover,
+.section-sb-current > ul > li ul li a {
+	color: #000;
+}
+.section-sb-current ul li.has_child > a:hover .section-sb-ico:before,
+.section-sb-current ul li.has_child > a:hover .section-sb-ico:after {
+	background-color: #000;
+}
+.iconbox-i .iconbox-i-ttl:after,
+.section-sb-ico:before, .section-sb-ico:after,
+#content-right-home .prod-items .prod-i .prod-i-top {
+	background-color: #00582d;
+}
+.vc_custom_1500060261089,
+.vc_custom_1500054413975 {
+	background-color: #00582d!important;
+}
+.site-content .section-mode li.active a {
+	box-shadow: 0 0 1px 2px #fff;
+    background-color: #fff;
+}
+.topmenu #primary-menu > ul > li > a, .topmenu .mainmenu > li > a {
+	font-weight: bold;
+}
+.product-hot .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_excerpt,
+.product-hot .vc_btn3-container.vc_btn3-left {
+	display: none;
+}
+.product-hot .vc_gitem-zone-a {
+	height: 180px;
+}
+.product-hot .vc_custom_heading h4,
+.product-hot .vc_custom_heading {
+	margin: 0!important;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hottle-fixed {
+	position: fixed;
+	bottom: 0;
+	left: 10px;
+}
+.hottle-fixed img {
+	width: 150px;
+}
+.widget_nav_menu ul li a:hover,
+.prod-items .prod-i h3 a:hover,
+.prod-cont .prod-showprops:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.banner-i-bg {
+	border:solid thin #f4ea96;
+}
+.banner-i-bg img {
+	max-width: unset;
+	min-width: 100%;
+	height: 100%;
+}
+
+.banners-list.banners-gap10 .banner-i {
+	padding: 0;
+}
+.banners-list.banners-gap10 {
+	margin: 0;
+}
+.banner-i-bg img{
+	transform: scale(1);
+	transition: transform 1s;
+}
+.banner-i-bg:hover img{
+	transform: scale(1.1);
+	transition: transform 1s;
+}
+.contactform {
+	max-height: auto;
+}
+.wpb_wrapper .pd-left-50 {
+	padding-left: 85px;
+    margin: 20px 0 20px 0!important;
+}
+.vc_pageable-slide-wrapper.slick-slider {
+	overflow: hidden;
+	position: relative;
+}
+.slick-prev, .slick-next {
+	background-color: transparent!important;
+	z-index: 999;
+	color: transparent!important;
+	top: 40%!important;
+}
+.slick-next {
+	right: 20px!important;
+}
+.slick-track {
+	display: flex;
+}
+.post-share-wrap .post-info li a {
+	color: #ccc;
+}
+.woocommerce .woocommerce-customer-details address {
+	border: 1px solid rgba(255,255,255,.1);
+}
+.section-sb-current > ul > li ul:after {
+	background: #189a4d;
+}
+.woof_open_hidden_li .woof_open_hidden_li_btn {
+	color: #000!important;
+}
+.site-footer .widget_nav_menu h2.widgettitle,
+.site-footer .widget_nav_menu ul li a,
+.site-footer .links_list li p,
+.site-footer .links_list li p b {
+	color: #fff;
+}
+.topmenu .topcatalog .topcatalog-btn,
+.topmenu .mainmenu-btn {
+	border-left-color: #00582d;
+}
+.topsearch .topsearch-btn {
+	border-right-color: #00582d;
+}
+.family-contact {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.family-contact b {
+	font-weight: bold;
+}
+@media screen and (min-width: 769px) {
+	#content-right-home .prod-items .product_cat-cao-cap .prod-i-img img {
+		max-height: 115px;
+	}
+	#content-right-home .prod-items .prod-i-img {
+		height: 133px;
+	}
+	#content-right-home .vc_gitem-animated-block  .vc_gitem-zone {
+		height: 150px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.header-middle-cont {
+		flex-flow: row wrap;
+		flex-direction: column;
+	}
+	.header-middle .header-middle-cont .toplogo,
+	.header-middle .infomation-company {
+		border: 0;
+	}
+	.vc_grid.vc_row.vc_grid-gutter-30px .vc_pageable-slide-wrapper {
+		margin: 0!important;
+	}
+	.vc_grid.vc_row.vc_grid-gutter-30px .vc_grid-item {
+		padding-right: 0!important;
+	}
+}
+@media only screen and (max-width: 550px){
+	.section-cont-full .section-items .prod-i, .section-cont .section-items .prod-i {
+	    width: 100%;
+	    margin: 0 0 36px !important;
+	    max-width: 100%;
+	    float: none;
+	}
+	.infomation-company h2 {
+		font-size: inherit;
+	}
+	.slick-next {
+		right: 0px!important;
+	}
+}
+@media all and (min-width: 420px) {
+	.topmenu .topcatalog {
+		width: 220px;
+	}
+}

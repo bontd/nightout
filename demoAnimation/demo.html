@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing">
+	<div id="wrapper">
+		<nav class="navbar">
+			<button class="hamburger" type="button">
+			  	<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+  				</span>
+			</button>
+			<div class="avatar">
+				<span></span>
+			</div>
+			<ul>
+				<li>	
+					<a href="#">home</a>
+				</li>
+				<li>	
+					<a href="#">About</a>
+				</li>
+				<li>	
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="content">
+			<div id="banner">
+				<h2>READ MORE animation</h2>
+			</div>
+
+			<div class="title-banner">
+				<div class="group-title">
+					<div class="item">
+						<div class="item-row">title 1</div>
+					</div>
+					<div class="item">
+						<div class="item-row">title 2</div>
+					</div>
+					<div class="item">
+						<div class="item-row">title 3</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div data-aos="fade-up" class="animation min-height-100">
+					<button class="btn js-toggle-hide">
+						<div class="btn-hover">
+							<span>READ MORE</span>
+						</div>
+					</button>
+
+					<div class="typewriter">
+					  <h1>The cat and the hat.</h1>
+					</div>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<table width="100%">
+						<tr>
+							<td>1</td>
+							<td rowspan="5">2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+					</table>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<button class="draw">Draw</button>
+
+	  				<button class="draw meet">Draw Meet</button>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<button class="btn">
+						<div class="btn-hover">
+							<span>READ MORE</span>
+						</div>
+					</button>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<button class="btn">
+						<div class="btn-hover">
+							<span>READ MORE</span>
+						</div>
+					</button>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<button class="btn">
+						<div class="btn-hover">
+							<span>READ MORE</span>
+						</div>
+					</button>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<button class="btn">
+						<div class="btn-hover">
+							<span>READ MORE</span>
+						</div>
+					</button>
+				</div>
+				<div data-aos="fade-up" class="min-height-100">
+					<button class="btn">
+						<div class="btn-hover">
+							<span>READ MORE</span>
+						</div>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- <script src="js/skel.min.js"></script>
+	<script src="js/main.js"></script> -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			setTimeout(function(){
+				$('#wrapper').addClass('delay');
+				// $('button').removeClass('draw').removeClass('meet').addClass('btn-hover');
+			},1000);
+			AOS.init();
+
+			$('.js-toggle-hide').click(function(){
+				$(this).parent().toggleClass('show-animation');
+			})
+
+			$('.hamburger').click(function(){
+				$(this).parent().toggleClass('is-active');
+			})
+		})
+	</script>
+</body>
+</html>
