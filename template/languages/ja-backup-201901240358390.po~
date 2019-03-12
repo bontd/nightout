@@ -1,0 +1,463 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: template\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-03 08:44+0000\n"
+"PO-Revision-Date: 2019-01-24 03:52+0000\n"
+"Last-Translator: admin <bontd01@gmail.com>\n"
+"Language-Team: Japanese\n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.8.8"
+
+#: core/options.php:126
+msgid "About Image"
+msgstr ""
+
+#: core/options.php:83
+msgid "All of setings for banner on this theme."
+msgstr ""
+
+#: core/options.php:184
+msgid "All of setings for footer on this theme."
+msgstr ""
+
+#: core/options.php:56
+msgid "All of setings for header on this theme."
+msgstr ""
+
+#: core/options.php:215
+msgid "All of typography settings."
+msgstr ""
+
+#. Author of the theme
+msgid "Anonymous"
+msgstr ""
+
+#: core/options.php:82
+msgid "Banner"
+msgstr ""
+
+#: core/options.php:90
+msgid "Banner Image"
+msgstr ""
+
+#: core/options.php:144
+msgid "Contact Image"
+msgstr ""
+
+#: archive.php:13
+#, php-format
+msgid "Daily Archives: %1$s"
+msgstr ""
+
+#: core/options.php:120
+msgid "Detail Image"
+msgstr ""
+
+#: core/options.php:69 core/options.php:197
+msgid "Disabled"
+msgstr ""
+
+#: core/options.php:96
+msgid "Discover Image"
+msgstr ""
+
+#: core/options.php:195
+msgid "Do you want to enable image footer?"
+msgstr ""
+
+#: core/options.php:67
+msgid "Do you want to enable image logo?"
+msgstr ""
+
+#: core/options.php:192
+msgid "Enable Image footer"
+msgstr ""
+
+#: core/options.php:64
+msgid "Enable Image Logo"
+msgstr ""
+
+#: core/options.php:68 core/options.php:196
+msgid "Enabled"
+msgstr ""
+
+#: core/options.php:183
+msgid "Footer"
+msgstr ""
+
+#: core/options.php:202
+msgid "footer Image"
+msgstr ""
+
+#: core/options.php:102
+msgid "Get discount Image"
+msgstr ""
+
+#: core/options.php:55
+msgid "Header"
+msgstr ""
+
+#. Name of the template
+msgid "home"
+msgstr ""
+
+#: core/options.php:138
+msgid "Howto Image"
+msgstr ""
+
+#: core/options.php:127
+msgid "Image that you want to use as about."
+msgstr ""
+
+#: core/options.php:91
+msgid "Image that you want to use as Banner."
+msgstr ""
+
+#: core/options.php:145
+msgid "Image that you want to use as contact."
+msgstr ""
+
+#: core/options.php:121
+msgid "Image that you want to use as detail."
+msgstr ""
+
+#: core/options.php:97
+msgid "Image that you want to use as discover."
+msgstr ""
+
+#: core/options.php:203
+msgid "Image that you want to use as footer."
+msgstr ""
+
+#: core/options.php:103
+msgid "Image that you want to use as get discount."
+msgstr ""
+
+#: core/options.php:139
+msgid "Image that you want to use as howto."
+msgstr ""
+
+#: core/options.php:75
+msgid "Image that you want to use as logo."
+msgstr ""
+
+#: core/options.php:115
+msgid "Image that you want to use as nearby."
+msgstr ""
+
+#: core/options.php:109
+msgid "Image that you want to use as safe secure."
+msgstr ""
+
+#: core/options.php:133
+msgid "Image that you want to use as topic."
+msgstr ""
+
+#: functions.php:194
+msgid "Leave a comment"
+msgstr ""
+
+#. Name of the template
+msgid "list category"
+msgstr ""
+
+#: core/options.php:74
+msgid "Logo Image"
+msgstr ""
+
+#: functions.php:59
+msgid "Main Sidebar"
+msgstr ""
+
+#: core/options.php:222
+msgid "Main Typography"
+msgstr ""
+
+#: core/options.php:152
+msgid "Map"
+msgstr "地図"
+
+#: core/options.php:114
+msgid "Nearby Image"
+msgstr ""
+
+#: functions.php:141
+msgid "Next"
+msgstr ""
+
+#: functions.php:221
+msgid "Next Page"
+msgstr ""
+
+#: functions.php:195
+msgid "One comment"
+msgstr ""
+
+#: archive.php:11
+#, php-format
+msgid "Posts Categorized: %1$s"
+msgstr ""
+
+#: archive.php:9
+#, php-format
+msgid "Posts Tagged: %1$s"
+msgstr ""
+
+#: functions.php:144
+msgid "Previous"
+msgstr ""
+
+#: functions.php:222
+msgid "Previous Page"
+msgstr ""
+
+#: functions.php:55
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:197
+msgid "Read all comments"
+msgstr ""
+
+#: core/options.php:108
+msgid "Safe Secure Image"
+msgstr ""
+
+#: core/options.php:153 core/options.php:160
+msgid "set url Map"
+msgstr ""
+
+#: core/options.php:168 core/options.php:175
+msgid "set url youtube"
+msgstr ""
+
+#. Name of the template
+msgid "Shop list"
+msgstr "ショップリスト"
+
+#: functions.php:242
+#, php-format
+msgid "Tagged in %1$s"
+msgstr ""
+
+#. Name of the theme
+msgid "template"
+msgstr ""
+
+#. Description of the theme
+msgid "Theme đơn giản"
+msgstr ""
+
+#: core/options.php:132
+msgid "Topic Image"
+msgstr ""
+
+#: core/options.php:214
+msgid "Typography"
+msgstr ""
+
+#: core/options.php:161 core/options.php:176
+msgid "Url"
+msgstr ""
+
+#: core/options.php:167
+msgid "Youtube"
+msgstr ""
+
+#: index.php:29
+msgid "There are only reliable facilities!"
+msgstr "安心できる施設ばかり。"
+
+#: index.php:31
+msgid "CHECK IT"
+msgstr "チェック"
+
+#: index.php:43
+msgid "Find places around you!!"
+msgstr ""
+
+#: index.php:43
+msgid "Search places around you!!"
+msgstr "近くのお店を探そう"
+
+#: index.php
+msgid "<span class=\"color-red\">M</span>AP"
+msgstr "<span class=\"color-red\">地</span>図"
+
+#: index.php
+msgid "<span class=\"color-red\">S</span>HOP LIST"
+msgstr "<span class=\"color-red\">シ</span>ョップリスト"
+
+#: index.php
+msgid "<span class=\"color-red\">T</span>OPICS"
+msgstr "<span class=\"color-red\">ト</span>ピックス"
+
+#: index.php:50
+msgid "See on a bigger map"
+msgstr ""
+
+#: index.php:50
+msgid "Show on the bigger map"
+msgstr "大きい地図で探す"
+
+#: index.php:167
+msgid "Show More"
+msgstr "もっと見る"
+
+#: single.php:60
+msgid "Price"
+msgstr "価格"
+
+#: single.php:71
+msgid "Language"
+msgstr "言葉"
+
+#: single.php:74
+msgid "English, Korean, China"
+msgstr ""
+
+#: single.php:80
+msgid "Smoking"
+msgstr "タバコ"
+
+#: single.php:89
+msgid "Main Visiter"
+msgstr ""
+
+#: single.php:98
+msgid "Access"
+msgstr "アクセス"
+
+#: single.php:153
+msgid "Address"
+msgstr "住所"
+
+#: single.php:157
+msgid "Open"
+msgstr "営業時間"
+
+#: single.php:163
+msgid "Tel"
+msgstr "電話"
+
+#: single.php:167
+msgid "Website"
+msgstr "ホームページ"
+
+#: single.php:199
+msgid "QR code"
+msgstr ""
+
+#: single.php:206
+msgid "Close"
+msgstr ""
+
+#: search.php:56
+msgid "We’re sorry. We cannot find any matches for your search terms."
+msgstr ""
+
+#: page-howto.php:89
+msgid "CAUTION"
+msgstr "注意事項"
+
+#: coupon.php:42
+msgid "drink free"
+msgstr ""
+
+#: coupon.php:47
+msgid "Unused"
+msgstr ""
+
+#: coupon.php:58
+msgid "Used"
+msgstr ""
+
+#: single.php:51
+msgid "Until"
+msgstr ""
+
+#: single.php:198
+msgid "OK"
+msgstr ""
+
+#: single.php:194
+msgid "Please be sure to show coupons to the shop staff."
+msgstr ""
+
+#: page.php:33
+msgid "Find shop"
+msgstr "お店を探す"
+
+#: form-search.php:7
+msgid "SEARCH"
+msgstr "探す"
+
+#: form-search.php:20
+msgid "Category"
+msgstr "カテゴリー"
+
+#: form-search.php:31
+msgid "Area"
+msgstr "エリア"
+
+#: form-search.php:55
+msgid "Detail"
+msgstr ""
+
+#: form-search.php:38
+msgid "minami"
+msgstr ""
+
+#: form-search.php:38
+msgid "kita"
+msgstr ""
+
+#: form-search.php
+msgid "performance"
+msgstr ""
+
+#: form-search.php
+msgid "high grade"
+msgstr ""
+
+#: form-search.php
+msgid "Search"
+msgstr "探す"
+
+#: form-search.php:38
+msgid "Kita"
+msgstr ""
+
+#: form-search.php:38
+msgid "Minami"
+msgstr ""
+
+#: 404.php
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr ""
+
+msgid "404 NOT FOUND"
+msgstr ""
+
+# coupon.php
+msgid "drink <span class=\"color-red\">free</span>"
+msgstr ""
+
+# form-search.php
+msgid "Feature"
+msgstr "特徴"
+
+#: singe.php
+msgid "SHOP INFOMATION"
+msgstr "ショップ詳細"
+
+#: singe.php
+msgid "Payment"
+msgstr "支払い"
